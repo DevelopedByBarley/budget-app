@@ -4,11 +4,14 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon backend/server.js"
+    "server": "nodemon backend/server.js",
+    "dev": "concurrently \"npm run server\" \"npm start --prefix frontend\""
   },
   "author": "Barley",
   "license": "MIT",
   "dependencies": {
+    "colors": "^1.4.0",
+    "concurrently": "^7.6.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",

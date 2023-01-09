@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
   useEffect(() => {
-    axios.get('http://localhost:8080/')
+    axios.get('http://localhost:8080/helloWorld')
     .then(res => console.log(res.data))
   },[])
 
